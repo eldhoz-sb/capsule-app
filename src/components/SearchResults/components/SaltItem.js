@@ -1,21 +1,28 @@
 // SaltItem.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SaltSelect from "./SaltSelect";
 
 function SaltItem({ salt }) {
   const saltForms = salt.salt_forms_json;
+  console.log("updated salt",salt)
 
-  const defaultForm = Object.keys(saltForms)[0] || null;
-  const defaultStrength = defaultForm
+  useEffect(() => {
+    const defaultForm = Object.keys(saltForms)[0] || null;
+    const defaultStrength = defaultForm
     ? Object.keys(saltForms[defaultForm])[0]
     : null;
-  const defaultPackage = defaultStrength
+    const defaultPackage = defaultStrength
     ? Object.keys(saltForms[defaultForm][defaultStrength])[0]
     : null;
+    setSelectedForm(defaultForm);
+    setSelectedStrength(defaultStrength);
+    setSelectedPackage(defaultPackage);
+  }, [saltForms]);
 
-  const [selectedForm, setSelectedForm] = useState(defaultForm);
-  const [selectedStrength, setSelectedStrength] = useState(defaultStrength);
-  const [selectedPackage, setSelectedPackage] = useState(defaultPackage);
+
+  const [selectedForm, setSelectedForm] = useState('');
+  const [selectedStrength, setSelectedStrength] = useState('');
+  const [selectedPackage, setSelectedPackage] = useState('');
 
   const [showAllForms, setShowAllForms] = useState(false);
   const [showAllStrengths, setShowAllStrengths] = useState(false);

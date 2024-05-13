@@ -1,3 +1,4 @@
+// SearchPage.js
 import { useState } from "react";
 import {fetchData} from "../../services/search";
 import Nav from "../Nav/Nav";
