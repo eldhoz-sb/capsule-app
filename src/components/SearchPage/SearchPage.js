@@ -21,7 +21,6 @@ function SearchPage() {
     }
   };
 
-  console.log(searchResults)
 
   return (
     <>

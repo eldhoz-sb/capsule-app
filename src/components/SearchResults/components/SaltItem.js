@@ -4,7 +4,6 @@ import SaltSelect from "./SaltSelect";
 
 function SaltItem({ salt }) {
   const saltForms = salt.salt_forms_json;
-  console.log("updated salt",salt)
 
   useEffect(() => {
     const defaultForm = Object.keys(saltForms)[0] || null;
