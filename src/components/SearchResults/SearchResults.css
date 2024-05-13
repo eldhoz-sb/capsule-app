@@ -1,7 +1,11 @@
 
+
 section#search-results {
     min-height: 600px;
     align-items: center;
+    margin: 0px 10%;
+    padding: 50px 0px;
+    gap:42px;
 }
 
 
@@ -12,3 +16,5 @@ span.search-results-placeholder {
     font-weight: 600;
     color: #888888;
 }
+
+
