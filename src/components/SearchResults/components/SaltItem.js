@@ -1,4 +1,4 @@
-// SaltItem.js
+
 import React, { useEffect, useState } from "react";
 import SaltSelect from "./SaltSelect";
 

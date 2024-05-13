@@ -1,4 +1,4 @@
-// SaltItemList.js
+
 import React from "react";
 import SaltItem from "./SaltItem";
 import "./SaltItemList.css";

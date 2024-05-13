@@ -1,4 +1,4 @@
-// SearchResults.js
+
 import React from "react";
 import "./SearchResults.css";
 import SaltItemList from "./components/SaltItemList";

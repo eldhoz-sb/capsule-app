@@ -1,5 +1,3 @@
-// SaltSelect.js
-import React, { useState } from "react";
 
 function SaltSelect({ renderFormButtons, renderStrengthButtons, renderPackagingButtons }) {
 
