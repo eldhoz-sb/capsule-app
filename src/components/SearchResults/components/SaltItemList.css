@@ -1,128 +1,164 @@
 .salt-suggestion {
-    display: flex;
-    background: linear-gradient(313deg, #D5E7E6, transparent);
-    border-radius: 15px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.10);
+  display: flex;
+  background: linear-gradient(313deg, #d5e7e6, transparent);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
 
 div#salt-selection {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
 }
 
 div#salt-main {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 
 div#salt-price {
-    display: flex;
-    width: 35%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
 }
 
-
 button {
-    background: #FFFFFF;
-    border: 1px solid #ABABAB;
-    border-radius: 8px;
-    padding: 5px 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
+  background: #ffffff;
+  border: 1px solid #ababab;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 button.selected {
-    color: #112D31;
-    font-weight: 600;
-    border: 2px solid #112D31;
-    box-shadow: 0px 0px 11px rgba(0, 197, 161, 0.40);
+  color: #112d31;
+  font-weight: 600;
+  border: 2px solid #112d31;
+  box-shadow: 0px 0px 11px rgba(0, 197, 161, 0.4);
 }
 
 button.not-avail {
-    border-style: dashed;
+  border-style: dashed;
 }
 
 .salt-box {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .salt-box-heading {
-    width: 25%;
-    font-weight: 300;
-    font-size: 15px;
+  width: 25%;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .salt-form {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 75%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 75%;
 }
 
 .salt-strength {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 75%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 75%;
 }
 
 .salt-packaging {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 75%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 75%;
 }
 
-
-
 h2.salt-price {
-    font-family: "Inter", sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-    color: #112D31;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #112d31;
 }
 
 p.salt-price {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #112D31;
-    border: 1px solid #A7D6D4;
-    background: #fFFFFF;
-    padding: 20px 20px;
-    max-width: 200px;
-    text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #112d31;
+  border: 1px solid #a7d6d4;
+  background: #ffffff;
+  padding: 20px 20px;
+  max-width: 200px;
+  text-align: center;
 }
 
-
 span.more-btn {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #204772;
-    cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #204772;
+  cursor: pointer;
 }
 
 div#salt-main h4 {
-    color: #222222;
+  color: #222222;
 }
 
 p.salt-selected-details {
-    font-family: "Poppins", sans-serif;
-    color: #204772;
-    font-size: 13px;
-    font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #204772;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+  div#salt-selection {
+    width: 45%;
+  }
+
+  div#salt-main {
+    width: 30%;
+  }
+
+  div#salt-price {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .salt-suggestion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div#salt-selection {
+    width: 80%;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  div#salt-main {
+    width: 80%;
+    padding: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  div#salt-price {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .salt-box-heading {
+    width: 80px;
+  }
 }

@@ -1,20 +1,22 @@
-
-
 section#search-results {
-    min-height: 600px;
-    align-items: center;
-    margin: 0px 10%;
-    padding: 50px 0px;
-    gap:42px;
+  min-height: 600px;
+  align-items: center;
+  margin: 0px 10%;
+  padding: 50px 0px;
+  gap: 42px;
 }
-
 
 span.search-results-placeholder {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #888888;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #888888;
 }
 
+@media screen and (max-width: 1400px) {
+    section#search-results {
+        margin: 0px 5%;
+      }
+}
 
